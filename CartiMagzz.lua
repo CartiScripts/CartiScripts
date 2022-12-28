@@ -15,8 +15,8 @@ function magBall(ball)
        firetouchinterest(player.Character["Left Arm"], ball, 0)
        firetouchinterest(player.Character["Right Arm"], ball, 0)
        task.wait()
-       firetouchinterest(player.Character["Left Arm"], ball, 0.7)
-       firetouchinterest(player.Character["Right Arm"], ball, 0.7)
+       firetouchinterest(player.Character["Left Arm"], ball, 1)
+       firetouchinterest(player.Character["Right Arm"], ball, 1)
    end
 end
 section1:addTextbox("Mags should auto disable if you are voted as QB", nil, function()end)
