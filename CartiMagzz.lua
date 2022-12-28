@@ -1,7 +1,7 @@
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/SlimLegoHacks/Scripts/main/Gui')))() -- It's obfuscated, I won't let you see my ugly coding skills. =)
-local ulib = library.new("Carti Script", 5013109572)
+local ulib = library.new("Carti Magzz", 5013109572)
     
-local page = ulib:addPage("Football Fusion", 5012544693)
+local page = ulib:addPage("FF2", 5012544693)
     
 local section1 = page:addSection("Main")
 local section2 = page:addSection("Misc.")
@@ -15,12 +15,12 @@ function magBall(ball)
        firetouchinterest(player.Character["Left Arm"], ball, 0)
        firetouchinterest(player.Character["Right Arm"], ball, 0)
        task.wait()
-       firetouchinterest(player.Character["Left Arm"], ball, 0.8)
-       firetouchinterest(player.Character["Right Arm"], ball, 0.8)
+       firetouchinterest(player.Character["Left Arm"], ball, 0.7)
+       firetouchinterest(player.Character["Right Arm"], ball, 0.7)
    end
 end
-section1:addTextbox("", nil, function()end)
-section1:addToggle("Realistic Mag", nil, function(bool)
+section1:addTextbox("Mags should auto disable if you are voted as QB", nil, function()end)
+section1:addToggle("Realistic Mags", nil, function(bool)
     shared.Mags = bool
     rs.Stepped:Connect(function()
     if shared.Mags and not game:GetService("ReplicatedStorage").Values.HomeQB.Value:match(player.Name) and not game:GetService("ReplicatedStorage").Values.AwayQB.Value:match(player.Name) then
@@ -29,20 +29,20 @@ section1:addToggle("Realistic Mag", nil, function(bool)
                wait()
                local mag = (player.Character.Torso.Position - v.Position).Magnitude
                magBall(v)
-               print('Active')
+               print('Carti! :)')
            end
         end
     else
         wait()
-        print('De-Active')
+        print('No Carti :(')
     end
     if shared.Mags and game:GetService("ReplicatedStorage").Values.HomeQB.Value:match(player.Name) or game:GetService("ReplicatedStorage").Values.AwayQB.Value:match(player.Name) then
-        print('CartiMagz Disable When QB')
+        print('Magz Auto-Disabled as QB')
     end
 end)
 end)
 
-section2:addToggle("Auto-Captain - Broken For The Moment :(", nil,function(bool)
+section2:addToggle("Auto-Captain - Doesnt Work :(", nil,function(bool)
     shared.Cap = bool
     if shared.Cap then
         game:GetService("Players").LocalPlayer.AutoCapValue.Value = true
@@ -63,7 +63,7 @@ spawn(function()
         end
     end
 end)
-section3:addTextbox("Test 1", nil, function()end)
-section3:addTextbox("Test 2", nil, function()end)
-section3:addTextbox("Test 3", nil, function()end)
-section3:addTextbox("Test 4", nil, function()end)
+section3:addTextbox(".", nil, function()end)
+section3:addTextbox("WIP", nil, function()end)
+section3:addTextbox("WIP", nil, function()end)
+section3:addTextbox("WIP", nil, function()end)
