@@ -1,5 +1,4 @@
-local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/CartiScripts/CartiScripts/main/ff2%20mags%20gui")() -- funnedevmen here, Hi, credits to whoever made this lib cuz i def didnt make it lol i cant code
-
+local lib = loadstring(game:HttpGet"https://github.com/CartiScripts/CartiScripts/blob/main/ff2magsgui.lua")()
 local win = lib:Window("Funne Football Script",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
 
 local tab = win:Tab("Mag")
