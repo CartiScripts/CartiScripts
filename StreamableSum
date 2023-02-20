@@ -1,7 +1,7 @@
 local player = game.Players.LocalPlayer
 
 if player:IsInGroup(16298833) then
-local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/topillesrevenge/Streamable-Silent/main/Side"))()
+local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/CartiScripts/CartiScripts/main/Insiders"))()
 Aiming.TeamCheck(false)
 
 local Workspace = game:GetService("Workspace")
